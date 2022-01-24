@@ -1,7 +1,13 @@
+import { FC } from 'react';
 import { Droppable } from 'react-beautiful-dnd';
 import { ListItem } from '.';
+import { CharactersData } from 'App';
 
-const List = ({ characters }) => {
+type Props = {
+  characters: CharactersData[];
+};
+
+const List: FC<Props> = ({ characters }) => {
   console.log('characters', characters);
 
   return (

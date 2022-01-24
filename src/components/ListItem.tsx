@@ -1,6 +1,15 @@
+import { FC } from 'react';
 import { Draggable } from 'react-beautiful-dnd';
 
-const ListItem = ({ id, ja, en, thumb, index }) => {
+type Props = {
+  id: string;
+  ja: string;
+  en: string;
+  thumb: string;
+  index: number;
+};
+
+const ListItem: FC<Props> = ({ id, ja, en, thumb, index }) => {
   return (
     <Draggable draggableId={id} index={index}>
       {(provided) => (

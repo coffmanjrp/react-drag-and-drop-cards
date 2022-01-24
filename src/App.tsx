@@ -1,13 +1,21 @@
 import { useState, useEffect } from 'react';
-import { DragDropContext } from 'react-beautiful-dnd';
-import charactersData from './charactersData';
-import { List } from './components';
-import './App.css';
+import { DragDropContext, DropResult } from 'react-beautiful-dnd';
+import charactersData from 'data/charactersData';
+import { List } from 'components';
+import 'App.css';
+
+export type CharactersData = {
+  id: string;
+  ja: string;
+  en: string;
+  thumb: string;
+};
 
 function App() {
-  const [characters, setCharacters] = useState(charactersData);
+  const [characters, setCharacters] =
+    useState<CharactersData[]>(charactersData);
 
-  const handleOnDragEnd = (result) => {
+  const handleOnDragEnd = (result: DropResult) => {
     const items = Array.from(characters);
     const [reorderedItem] = items.splice(result.source.index, 1);
 
@@ -20,8 +28,6 @@ function App() {
 
       localStorage.setItem('characters', JSON.stringify(items));
     }
-
-    console.log(result);
   };
 
   useEffect(() => {
@@ -35,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>React Drag &amp; Drop</h1>
+        <h1>React Drag &amp; Drop Cards</h1>
         <DragDropContext onDragEnd={handleOnDragEnd}>
           <List characters={characters} />
         </DragDropContext>
