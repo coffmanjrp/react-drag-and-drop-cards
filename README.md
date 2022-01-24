@@ -1,6 +1,6 @@
 # React Drag and Drop Cards
 
-The cards can swap places with drag and drop.
+A simple drag and drop mock. Cards can swap places with drag and drop.
 
 [DEMO](https://eloquent-heyrovsky-21290f.netlify.app/)
 
@@ -37,6 +37,6 @@ Enjoy!
 
 ## Stacks
 
-[React](https://reactjs.org/)
-[TypeScript](https://www.typescriptlang.org/)
-[react-beautiful-dnd (rbd)](https://react-beautiful-dnd.netlify.app/?path=/story/single-vertical-list--basic)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [react-beautiful-dnd (rbd)](https://react-beautiful-dnd.netlify.app/?path=/story/single-vertical-list--basic)
