@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+# React Drag and Drop Cards
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The cards can swap places with drag and drop.
 
-## Available Scripts
+[DEMO](https://eloquent-heyrovsky-21290f.netlify.app/)
 
-In the project directory, you can run:
+![React Drag and Drop Cards](https://res.cloudinary.com/coffmanjrp-dev/image/upload/v1643061625/coffmanjrp.io/react_drag_and_drop_cards_c054752cf4.png)
 
-### `npm start`
+## How to start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Clone this repository.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+git clone git@github.com:coffmanjrp/react-drag-and-drop-cards.git
+```
 
-### `npm test`
+Or download the zip file.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Run following command to install the dependencies.
 
-### `npm run build`
+```
+npm install
+# or
+yarn
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. And you can start localhost by
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm start
+# or
+yarn start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+Enjoy!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Stacks
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[React](https://reactjs.org/)
+[TypeScript](https://www.typescriptlang.org/)
+[react-beautiful-dnd (rbd)](https://react-beautiful-dnd.netlify.app/?path=/story/single-vertical-list--basic)
