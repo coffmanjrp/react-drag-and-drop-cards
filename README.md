@@ -30,7 +30,6 @@ yarn
 npm start
 # or
 yarn start
-
 ```
 
 Enjoy!
