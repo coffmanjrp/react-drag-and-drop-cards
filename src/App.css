@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -32,6 +37,8 @@
 }
 
 .characters li p {
+  display: flex;
+  flex-direction: column;
   font-size: 1.4375rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.6);

@@ -1,4 +1,4 @@
-const CharactersData = [
+const charactersData = [
   {
     id: 'yanbarukuina',
     ja: 'ヤンバルクイナ',
@@ -31,4 +31,4 @@ const CharactersData = [
   },
 ];
 
-export default CharactersData;
+export default charactersData;

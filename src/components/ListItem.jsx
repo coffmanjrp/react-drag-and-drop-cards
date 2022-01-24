@@ -13,7 +13,7 @@ const ListItem = ({ id, ja, en, thumb, index }) => {
             <img src={thumb} alt={`${en} thumb`} />
           </div>
           <p>
-            {ja} <br />
+            {ja}
             <span>{en}</span>
           </p>
         </li>

@@ -1,7 +1,9 @@
 import { Droppable } from 'react-beautiful-dnd';
-import ListItem from './ListItem';
+import { ListItem } from '.';
 
 const List = ({ characters }) => {
+  console.log('characters', characters);
+
   return (
     <Droppable droppableId="characters">
       {(provided) => (
@@ -10,16 +12,10 @@ const List = ({ characters }) => {
           ref={provided.innerRef}
           {...provided.droppableProps}
         >
-          {characters.map(({ id, ja, en, thumb }, index) => (
-            <ListItem
-              key={id}
-              id={id}
-              ja={ja}
-              en={en}
-              thumb={thumb}
-              index={index}
-            />
-          ))}
+          {characters &&
+            characters.map(({ id, ja, en, thumb }, index) => (
+              <ListItem key={id} {...{ id, ja, en, thumb, index }} />
+            ))}
           {provided.placeholder}
         </ul>
       )}

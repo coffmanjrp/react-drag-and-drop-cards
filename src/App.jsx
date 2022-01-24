@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
-import CharactersData from './charactersData';
-import List from './components/List';
+import charactersData from './charactersData';
+import { List } from './components';
 import './App.css';
 
 function App() {
-  const [characters, setCharacters] = useState(CharactersData);
+  const [characters, setCharacters] = useState(charactersData);
 
   const handleOnDragEnd = (result) => {
     const items = Array.from(characters);
@@ -20,12 +20,16 @@ function App() {
 
       localStorage.setItem('characters', JSON.stringify(items));
     }
+
+    console.log(result);
   };
 
   useEffect(() => {
     const ls = localStorage.getItem('characters');
 
-    setCharacters(JSON.parse(ls));
+    if (ls) {
+      setCharacters(JSON.parse(ls));
+    }
   }, []);
 
   return (
